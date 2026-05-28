@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: dockerfile-hash-guard
+        name: Dockerfile clobber guard
+        entry: scripts/check-dockerfile-hash.sh
+        language: script
+        files: ^Dockerfile$
+        pass_filenames: false

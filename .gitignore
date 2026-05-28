@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Apify local storage
+apify_storage/
+storage/
+
+# Environment / secrets — NEVER commit these
+.env
+.env.local
+*.env
+apify_auth.json
+.apify/auth.json
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Test artefacts
+.pytest_cache/
+.coverage
+htmlcov/

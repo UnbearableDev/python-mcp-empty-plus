@@ -1,0 +1,33 @@
+{
+  "_comment": [
+    "PPE (Pay-Per-Event) config for Apify Standby Actors.",
+    "",
+    "Post-April-1 2025 economics:",
+    "  - Every Apify user gets $5/month in free platform credits.",
+    "  - At $0.02/call that's 250 free runs per user per month.",
+    "  - First paid dollar only flows after a user's free credits are exhausted.",
+    "  - Solo devs and hobbyists may never pay — price for pro/team users.",
+    "",
+    "Pricing strategy:",
+    "  - 'light-read' ($0.005): catalog/list/lookup calls with low compute.",
+    "  - 'heavy-call' ($0.02): analysis/audit/generation calls with real work.",
+    "  - Keep the ratio 4:1 so discovery is cheap and execution is billable.",
+    "",
+    "PPE startedAt gotcha:",
+    "  - startedAt MUST be >= 14 days from the push date.",
+    "  - Setting it closer returns 403 cannot-modify-actor-pricing-with-immediate-effect.",
+    "  - Set it 15-20 days out to be safe.",
+    "",
+    "Docs: https://docs.apify.com/platform/actors/running/pay-per-event"
+  ],
+  "light-read": {
+    "eventTitle": "List / lookup call",
+    "eventDescription": "Charged for catalog, list, or lookup tool calls. Low compute.",
+    "eventPriceUsd": 0.005
+  },
+  "heavy-call": {
+    "eventTitle": "Analysis / audit call",
+    "eventDescription": "Charged per primary tool call. Returns analysis results.",
+    "eventPriceUsd": 0.02
+  }
+}

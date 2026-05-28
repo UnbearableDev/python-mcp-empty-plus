@@ -1,0 +1,28 @@
+{
+  "$schema": "https://apify.com/schemas/v1/actor.ide.json",
+  "actorSpecification": 1,
+  "name": "your-actor-name",
+  "title": "Your Actor Title",
+  "description": "Replace this with your Actor description. Keep it under 200 characters. MCP-native — call from Claude Desktop, Cursor, n8n, or any MCP client.",
+  "version": "0.1",
+  "buildTag": "latest",
+  "usesStandbyMode": true,
+  "meta": {
+    "templateId": "python-mcp-empty-plus",
+    "generatedBy": "UnbearableDev/python-mcp-empty-plus scaffold"
+  },
+  "input": {
+    "title": "Actor input schema",
+    "description": "MCP server runs in Standby mode — input is supplied via MCP tool calls, not Actor input.",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {},
+    "required": []
+  },
+  "dockerfile": "../Dockerfile",
+  "webServerMcpPath": "/mcp",
+  "categories": [
+    "DEVELOPER_TOOLS",
+    "MCP_SERVERS"
+  ]
+}
