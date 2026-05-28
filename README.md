@@ -6,7 +6,7 @@
 
 **A production-hardened Python scaffold for building MCP servers on Apify.**
 
-This is the same scaffold we used internally to ship 6 production MCP Actors on the Apify Store. It starts where Apify's official `python-mcp-empty` template stops: add a Dockerfile clobber guard, a smoke-test harness, and the check-registry pattern that makes audit-style Actors composable. Clone it, fill in your domain logic, push to Apify.
+This is the same scaffold we used at Unbearable Labs to ship 6 production MCP Actors on the Apify Store. It starts where Apify's official `python-mcp-empty` template stops: add a Dockerfile clobber guard, a smoke-test harness, and the check-registry pattern that makes audit-style Actors composable. Clone it, fill in your domain logic, push to Apify.
 
 Zero recurring API spend. Apify pay-per-event means your Actor sleeps when idle and charges only on calls. No idle $5-20/month VPS. No platform lock-in beyond the hosting layer.
 
@@ -174,4 +174,4 @@ Get notified when it ships: [subscribe to the Unbearable TechTips newsletter](ht
 
 ---
 
-Built by Noel @ Unbearable TechTips — newsletter at https://unbearabletechtips.beehiiv.com
+Built by Noel @ Unbearable Labs — get the weekly newsletter at https://unbearabletechtips.beehiiv.com
