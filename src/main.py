@@ -10,6 +10,7 @@ You should not need to edit this file. Put your domain logic in server.py.
 """
 
 from __future__ import annotations
+from src import mcp_patch  # noqa: F401  # patches -32602 -> -32601 for unknown methods
 
 import asyncio
 import os

@@ -174,4 +174,11 @@ Get notified when it ships: [subscribe to the Unbearable TechTips newsletter](ht
 
 ---
 
+## Changelog
+
+### 2026-05-28
+- Added `src/mcp_patch.py`: monkey-patches `mcp.shared.session.INVALID_PARAMS` to `METHOD_NOT_FOUND` (`-32601`) at startup. Fixes Smithery capability-probe warning: the mcp SDK emits `-32602` (Invalid Params) for unknown methods like `triggers/list` instead of the correct `-32601` (Method Not Found) per JSON-RPC 2.0 spec.
+
+---
+
 Built by Noel @ Unbearable Labs — get the weekly newsletter at https://unbearabletechtips.beehiiv.com
